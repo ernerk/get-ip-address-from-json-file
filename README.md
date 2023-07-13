@@ -1,4 +1,4 @@
-#get ip address from json file
+# Get ip address from json file
 
 Each JSON object appears as a dict or list, and these are separated by commas, usually located within an array ([]) or a dict ({}).
 
