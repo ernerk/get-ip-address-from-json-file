@@ -12,7 +12,7 @@ def find_ips(input_string):
 all_ips = []
 
 # Open the json file and read each line as a separate json object
-with open(r"C:\Users\erene\Desktop\shodanip.json", 'r') as f:
+with open(r"path_to_your_file.json", 'r') as f:
     for line in f:
         data = json.loads(line)
         for key, value in data.items():
@@ -27,4 +27,4 @@ with open(r"C:\Users\erene\Desktop\shodanip.json", 'r') as f:
 df = pd.DataFrame(all_ips, columns=['IP Addresses'])
 
 # Write the DataFrame to an Excel file
-df.to_excel(r"C:\Users\erene\Desktop\ip_addresses.xlsx", index=False)
+df.to_excel(r"path_to_your_file.xlsx", index=False)
